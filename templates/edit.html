@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Glassmorphism login Form Tutorial in html css</title>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="/static/css/tooplate-little-fashion.css" rel="stylesheet">
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b8860b;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 400px;
+    width: 300px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+    </style>
+</head>
+<body>
+<main>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Edit</span> Products</strong>
+                    </a>
+
+<!--                    <div class="d-lg-none">-->
+<!--                        <a href="/static/login.html" class="bi-person custom-icon me-3"></a>-->
+
+<!--                        <a href="/static/product-detail.html" class="bi-bag custom-icon"></a>-->
+<!--                    </div>-->
+
+<!--                    <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--                        <ul class="navbar-nav mx-auto">-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link active" href="products">add</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="products_view">pro_views</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="admin_view">order_view</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="logt">logout</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+
+<!--
+                      <div class="d-none d-lg-block">-->
+<!--                            <a href="/static/login.html" class="bi-person custom-icon me-3"></a>-->
+
+<!--                            <a href="/static/products.html" class="bi-bag custom-icon"></a>-->
+<!--                        </div>-->
+                        </div>
+                </div>
+            </nav>
+</main>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+</body>
+</html>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        <tr>
+        <th>Product_Name</th>
+            <td>
+                <input type="text" name="Product_Name" value="{{p.Product_Name}}">
+            </td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td>
+                <input type="text" name="Price" value="{{p.Price}}">
+            </td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td>
+                <input type="text" name="Quantity" value="{{p.Quantity}}">
+            </td>
+        </tr>
+        <tr>
+            <th>Photo</th>
+            <td>
+                <img src="{{p.Photo}}" alt="Photo" height="50px" width="50px"></td>
+               <td>
+            <input type="file" name="Photo" value="{{p.Photo}}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="submit" value="submit">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
