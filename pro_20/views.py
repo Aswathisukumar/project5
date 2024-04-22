@@ -19,7 +19,7 @@ def sign_in(request):
         z.save()
         q = customer(First_Name=a, Last_Name=b, Email=c, User_Name=d, Password=e)
         q.save()
-        return HttpResponse('data successfully saved')
+        return HttpResponse('<script>alert("data successfully saved"),window.location="/home1";</script>')
     return render(request, 'usersignin.html')
 
 
@@ -129,7 +129,7 @@ def order(request,pid,pr):
             z.save()
             x.Quantity=int(x.Quantity)-int(qnty)
             x.save()
-            return HttpResponse('Order successfully completed')
+            return HttpResponse('<script>alert("Order successfully completed"),window.location="/order_view";</script>')
         else:
             return HttpResponse('<script>alert("insufficient quantity"),window.location="/user_view";</script>')
     return render(request,'booking.html', {'p': q})
@@ -139,14 +139,15 @@ def approve(request,oid):
     q=booking.objects.get(id=oid)
     q.Status='Approved'
     q.save()
-    return HttpResponse('Order Accepted')
+    return HttpResponse('<script>alert("Order Accepted"),window.location="/admin_view";</script>')
 
 
 def reject(request,oid):
     q=booking.objects.get(id=oid)
     q.Status='rejected'
     q.save()
-    return HttpResponse('Order rejected')
+    return HttpResponse('<script>alert("Order rejected"),window.location="/admin_view";</script>')
+
 
 
 def logt(request):
@@ -174,7 +175,7 @@ def make_payment(request, id, t):
         q = booking.objects.get(id=b_id)
         q.Status = "confirm"
         q.save()
-        return HttpResponse("Payment success and order confirm")
+        return HttpResponse('<script>alert("Payment success and order confirm"),window.location="/order_view";</script>')
     return render(request, 'payment.html', {'t': total_amount})
 
 

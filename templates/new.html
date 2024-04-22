@@ -1,362 +1,567 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--   <head>-->
+<!--      &lt;!&ndash; basic &ndash;&gt;-->
+<!--      <meta charset="utf-8">-->
+<!--      <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--      <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--      &lt;!&ndash; mobile metas &ndash;&gt;-->
+<!--      <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--      <meta name="viewport" content="initial-scale=1, maximum-scale=1">-->
+<!--      &lt;!&ndash; site metas &ndash;&gt;-->
+<!--      <title>Electronic</title>-->
+<!--      <meta name="keywords" content="">-->
+<!--      <meta name="description" content="">-->
+<!--      <meta name="author" content="">-->
+<!--      &lt;!&ndash; bootstrap css &ndash;&gt;-->
+<!--      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<!--      &lt;!&ndash; style css &ndash;&gt;-->
+<!--      <link rel="stylesheet" type="text/css" href="css/style.css">-->
+<!--      &lt;!&ndash; Responsive&ndash;&gt;-->
+<!--      <link rel="stylesheet" href="css/responsive.css">-->
+<!--      &lt;!&ndash; fevicon &ndash;&gt;-->
+<!--      <link rel="icon" href="images/fevicon.png" type="image/gif" />-->
+<!--      &lt;!&ndash; Scrollbar Custom CSS &ndash;&gt;-->
+<!--      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">-->
+<!--      &lt;!&ndash; Tweaks for older IEs&ndash;&gt;-->
+<!--      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">-->
+<!--      &lt;!&ndash; fonts &ndash;&gt;-->
+<!--      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">-->
+<!--      &lt;!&ndash; font awesome &ndash;&gt;-->
+<!--      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--      &lt;!&ndash;  &ndash;&gt;-->
+<!--      &lt;!&ndash; owl stylesheets &ndash;&gt;-->
+<!--      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">-->
+<!--      <link rel="stylesheet" href="css/owl.carousel.min.css">-->
+<!--      <link rel="stylesoeet" href="css/owl.theme.default.min.css">-->
+<!--      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">-->
+<!--   </head>-->
+<!--   <body>-->
+<!--      &lt;!&ndash; banner bg main start &ndash;&gt;-->
+<!--      <div class="banner_bg_main">-->
+<!--         &lt;!&ndash; header top section start &ndash;&gt;-->
+<!--         <div class="container">-->
+<!--            <div class="header_section_top">-->
+<!--               <div class="row">-->
+<!--                  <div class="col-sm-12">-->
+<!--                     <div class="custom_menu">-->
+<!--                        <ul>-->
+<!--                           <li><a href="#">Best Sellers</a></li>-->
+<!--                           <li><a href="#">Gift Ideas</a></li>-->
+<!--                           <li><a href="#">New Releases</a></li>-->
+<!--                           <li><a href="#">Today's Deals</a></li>-->
+<!--                           <li><a href="#">Customer Service</a></li>-->
+<!--                        </ul>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--         &lt;!&ndash; header top section start &ndash;&gt;-->
+<!--         &lt;!&ndash; logo section start &ndash;&gt;-->
+<!--         <div class="logo_section">-->
+<!--            <div class="container">-->
+<!--               <div class="row">-->
+<!--                  <div class="col-sm-12">-->
+<!--                     <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--         &lt;!&ndash; logo section end &ndash;&gt;-->
+<!--         &lt;!&ndash; header section start &ndash;&gt;-->
+<!--         <div class="header_section">-->
+<!--            <div class="container">-->
+<!--               <div class="containt_main">-->
+<!--                  <div id="mySidenav" class="sidenav">-->
+<!--                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+<!--                     <a href="index.html">Home</a>-->
+<!--                     <a href="fashion.html">Fashion</a>-->
+<!--                     <a href="electronic.html">Electronic</a>-->
+<!--                     <a href="jewellery.html">Jewellery</a>-->
+<!--                  </div>-->
+<!--                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>-->
+<!--                  <div class="dropdown">-->
+<!--                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category -->
+<!--                     </button>-->
+<!--                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+<!--                        <a class="dropdown-item" href="#">Action</a>-->
+<!--                        <a class="dropdown-item" href="#">Another action</a>-->
+<!--                        <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--                  <div class="main">-->
+<!--                     &lt;!&ndash; Another variation with a button &ndash;&gt;-->
+<!--                     <div class="input-group">-->
+<!--                        <input type="text" class="form-control" placeholder="Search this blog">-->
+<!--                        <div class="input-group-append">-->
+<!--                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">-->
+<!--                           <i class="fa fa-search"></i>-->
+<!--                           </button>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--                  <div class="header_box">-->
+<!--                     <div class="lang_box ">-->
+<!--                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">-->
+<!--                        <img src="images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>-->
+<!--                        </a>-->
+<!--                        <div class="dropdown-menu ">-->
+<!--                           <a href="#" class="dropdown-item">-->
+<!--                           <img src="images/flag-france.png" class="mr-2" alt="flag">-->
+<!--                           French-->
+<!--                           </a>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                     <div class="login_menu">-->
+<!--                        <ul>-->
+<!--                           <li><a href="#">-->
+<!--                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>-->
+<!--                              <span class="padding_10">Cart</span></a>-->
+<!--                           </li>-->
+<!--                           <li><a href="#">-->
+<!--                              <i class="fa fa-user" aria-hidden="true"></i>-->
+<!--                              <span class="padding_10">Cart</span></a>-->
+<!--                           </li>-->
+<!--                        </ul>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--         &lt;!&ndash; header section end &ndash;&gt;-->
+<!--         &lt;!&ndash; banner section start &ndash;&gt;-->
+<!--         <div class="banner_section layout_padding">-->
+<!--            <div class="container">-->
+<!--               <div id="my_slider" class="carousel slide" data-ride="carousel">-->
+<!--                  <div class="carousel-inner">-->
+<!--                     <div class="carousel-item active">-->
+<!--                        <div class="row">-->
+<!--                           <div class="col-sm-12">-->
+<!--                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>-->
+<!--                              <div class="buynow_bt"><a href="#">Buy Now</a></div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                     <div class="carousel-item">-->
+<!--                        <div class="row">-->
+<!--                           <div class="col-sm-12">-->
+<!--                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>-->
+<!--                              <div class="buynow_bt"><a href="#">Buy Now</a></div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                     <div class="carousel-item">-->
+<!--                        <div class="row">-->
+<!--                           <div class="col-sm-12">-->
+<!--                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>-->
+<!--                              <div class="buynow_bt"><a href="#">Buy Now</a></div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">-->
+<!--                  <i class="fa fa-angle-left"></i>-->
+<!--                  </a>-->
+<!--                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">-->
+<!--                  <i class="fa fa-angle-right"></i>-->
+<!--                  </a>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--         &lt;!&ndash; banner section end &ndash;&gt;-->
+<!--      </div>-->
+<!--      &lt;!&ndash; banner bg main end &ndash;&gt;-->
+<!--      &lt;!&ndash; electronic section start &ndash;&gt;-->
+<!--      <div class="fashion_section">-->
+<!--         <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">-->
+<!--            <div class="carousel-inner">-->
+<!--               <div class="carousel-item active">-->
+<!--                  <div class="container">-->
+<!--                     <h1 class="fashion_taital">Electronic</h1>-->
+<!--                     <div class="fashion_section_2">-->
+<!--                        <div class="row">-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Laptop</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/laptop-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Mobile</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/mobile-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Computers</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/computer-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--               <div class="carousel-item">-->
+<!--                  <div class="container">-->
+<!--                     <h1 class="fashion_taital">Electronic</h1>-->
+<!--                     <div class="fashion_section_2">-->
+<!--                        <div class="row">-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Laptop</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/laptop-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Mobile</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/mobile-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Computers</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/computer-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--               <div class="carousel-item">-->
+<!--                  <div class="container">-->
+<!--                     <h1 class="fashion_taital">Electronic</h1>-->
+<!--                     <div class="fashion_section_2">-->
+<!--                        <div class="row">-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Laptop</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/laptop-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Mobile</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/mobile-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                           <div class="col-lg-4 col-sm-4">-->
+<!--                              <div class="box_main">-->
+<!--                                 <h4 class="shirt_text">Computers</h4>-->
+<!--                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>-->
+<!--                                 <div class="electronic_img"><img src="images/computer-img.png"></div>-->
+<!--                                 <div class="btn_main">-->
+<!--                                    <div class="buy_bt"><a href="#">Buy Now</a></div>-->
+<!--                                    <div class="seemore_bt"><a href="#">See More</a></div>-->
+<!--                                 </div>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">-->
+<!--            <i class="fa fa-angle-left"></i>-->
+<!--            </a>-->
+<!--            <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">-->
+<!--            <i class="fa fa-angle-right"></i>-->
+<!--            </a>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; electronic section end &ndash;&gt;-->
+<!--      &lt;!&ndash; footer section start &ndash;&gt;-->
+<!--      <div class="footer_section layout_padding">-->
+<!--         <div class="container">-->
+<!--            <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>-->
+<!--            <div class="input_bt">-->
+<!--               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">-->
+<!--               <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>-->
+<!--            </div>-->
+<!--            <div class="footer_menu">-->
+<!--               <ul>-->
+<!--                  <li><a href="#">Best Sellers</a></li>-->
+<!--                  <li><a href="#">Gift Ideas</a></li>-->
+<!--                  <li><a href="#">New Releases</a></li>-->
+<!--                  <li><a href="#">Today's Deals</a></li>-->
+<!--                  <li><a href="#">Customer Service</a></li>-->
+<!--               </ul>-->
+<!--            </div>-->
+<!--            <div class="location_main">Help Line  Number : <a href="#">+1 1800 1200 1200</a></div>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; footer section end &ndash;&gt;-->
+<!--      &lt;!&ndash; copyright section start &ndash;&gt;-->
+<!--      <div class="copyright_section">-->
+<!--         <div class="container">-->
+<!--            <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; copyright section end &ndash;&gt;-->
+<!--      &lt;!&ndash; Javascript files&ndash;&gt;-->
+<!--      <script src="js/jquery.min.js"></script>-->
+<!--      <script src="js/popper.min.js"></script>-->
+<!--      <script src="js/bootstrap.bundle.min.js"></script>-->
+<!--      <script src="js/jquery-3.0.0.min.js"></script>-->
+<!--      <script src="js/plugin.js"></script>-->
+<!--      &lt;!&ndash; sidebar &ndash;&gt;-->
+<!--      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>-->
+<!--      <script src="js/custom.js"></script>-->
+<!--      <script>-->
+<!--         function openNav() {-->
+<!--           document.getElementById("mySidenav").style.width = "250px";-->
+<!--         }-->
+<!--         -->
+<!--         function closeNav() {-->
+<!--           document.getElementById("mySidenav").style.width = "0";-->
+<!--         }-->
+<!--      </script>-->
+<!--   </body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Electronic</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <!-- fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-      <!-- font awesome -->
-      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!--  -->
-      <!-- owl stylesheets -->
-      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesoeet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-   </head>
-   <body>
-      <!-- banner bg main start -->
-      <div class="banner_bg_main">
-         <!-- header top section start -->
-         <div class="container">
-            <div class="header_section_top">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="custom_menu">
-                        <ul>
-                           <li><a href="#">Best Sellers</a></li>
-                           <li><a href="#">Gift Ideas</a></li>
-                           <li><a href="#">New Releases</a></li>
-                           <li><a href="#">Today's Deals</a></li>
-                           <li><a href="#">Customer Service</a></li>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="/static/css/tooplate-little-fashion.css" rel="stylesheet">
+            <script type="text/javascript">
+                window.history.forward();
+                function noBack() {
+                    window.history.forward();
+                }
+            </script>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b8860b;
+}
+.background{
+    width: 450px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 60px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+    </style>
+</head>
+<body>
+<main>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>ELECTRO</span>STORE</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="/static/login.html" class="bi-person custom-icon me-3"></a>
+
+                        <a href="/static/product-detail.html" class="bi-bag custom-icon"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="user_view">view</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="order_view">order_view</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="logt">logout</a>
+                            </li>
+
                         </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- header top section start -->
-         <!-- logo section start -->
-         <div class="logo_section">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- logo section end -->
-         <!-- header section start -->
-         <div class="header_section">
-            <div class="container">
-               <div class="containt_main">
-                  <div id="mySidenav" class="sidenav">
-                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <a href="index.html">Home</a>
-                     <a href="fashion.html">Fashion</a>
-                     <a href="electronic.html">Electronic</a>
-                     <a href="jewellery.html">Jewellery</a>
-                  </div>
-                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
-                  <div class="dropdown">
-                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
-                     </button>
-                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                     </div>
-                  </div>
-                  <div class="main">
-                     <!-- Another variation with a button -->
-                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search this blog">
-                        <div class="input-group-append">
-                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
-                           <i class="fa fa-search"></i>
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="header_box">
-                     <div class="lang_box ">
-                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
-                        <img src="images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
-                        </a>
-                        <div class="dropdown-menu ">
-                           <a href="#" class="dropdown-item">
-                           <img src="images/flag-france.png" class="mr-2" alt="flag">
-                           French
-                           </a>
-                        </div>
-                     </div>
-                     <div class="login_menu">
-                        <ul>
-                           <li><a href="#">
-                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                              <span class="padding_10">Cart</span></a>
-                           </li>
-                           <li><a href="#">
-                              <i class="fa fa-user" aria-hidden="true"></i>
-                              <span class="padding_10">Cart</span></a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- header section end -->
-         <!-- banner section start -->
-         <div class="banner_section layout_padding">
-            <div class="container">
-               <div id="my_slider" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
-                  </a>
-               </div>
-            </div>
-         </div>
-         <!-- banner section end -->
-      </div>
-      <!-- banner bg main end -->
-      <!-- electronic section start -->
-      <div class="fashion_section">
-         <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container">
-                     <h1 class="fashion_taital">Electronic</h1>
-                     <div class="fashion_section_2">
-                        <div class="row">
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Laptop</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/laptop-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Mobile</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/mobile-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Computers</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/computer-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <h1 class="fashion_taital">Electronic</h1>
-                     <div class="fashion_section_2">
-                        <div class="row">
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Laptop</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/laptop-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Mobile</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/mobile-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Computers</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/computer-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <h1 class="fashion_taital">Electronic</h1>
-                     <div class="fashion_section_2">
-                        <div class="row">
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Laptop</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/laptop-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Mobile</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/mobile-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-sm-4">
-                              <div class="box_main">
-                                 <h4 class="shirt_text">Computers</h4>
-                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
-                                 <div class="electronic_img"><img src="images/computer-img.png"></div>
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-            </a>
-         </div>
-      </div>
-      <!-- electronic section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
-            <div class="input_bt">
-               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
-               <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
-            </div>
-            <div class="footer_menu">
-               <ul>
-                  <li><a href="#">Best Sellers</a></li>
-                  <li><a href="#">Gift Ideas</a></li>
-                  <li><a href="#">New Releases</a></li>
-                  <li><a href="#">Today's Deals</a></li>
-                  <li><a href="#">Customer Service</a></li>
-               </ul>
-            </div>
-            <div class="location_main">Help Line  Number : <a href="#">+1 1800 1200 1200</a></div>
-         </div>
-      </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
-         </div>
-      </div>
-      <!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script>
-         function openNav() {
-           document.getElementById("mySidenav").style.width = "250px";
-         }
-         
-         function closeNav() {
-           document.getElementById("mySidenav").style.width = "0";
-         }
-      </script>
-   </body>
+
+                    </div>
+                </div>
+            </nav>
+</main>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+<!--<h1>welcome user!!!!</h1>-->
+<!--<a href="logt">logout</a>-->
+<!--<a href="user_view">view</a>-->
+<!--&lt;!&ndash;<a href="order">product_view</a>&ndash;&gt;-->
+<!--<a href="order_view">order_view</a>-->
+</body>
 </html>

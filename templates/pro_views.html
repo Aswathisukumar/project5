@@ -1,26 +1,273 @@
-<!--!DOCTYPE html>-->
+<!--<!DOCTYPE html>-->
 <!--{% load static %}-->
-<!--<html lang="en">-->
+<!--<html lang="en" >-->
 <!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Title</title>-->
+<!--  <meta charset="UTF-8">-->
+<!--    <script type="text/javascript">-->
+<!--        window.history.forward();-->
+<!--        function noBack() {-->
+<!--        window.history.forward();-->
+<!--        }-->
+<!--    </script>-->
+<!--  <title>CodePen - Glassmorphism login Form Tutorial in html css</title>-->
+
+
 <!--</head>-->
 <!--<body>-->
+<!--&lt;!&ndash; partial:index.partial.html &ndash;&gt;-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+
+<!--        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+
+<!--        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">-->
+
+<!--        <link href="/static/css/bootstrap.min.css" rel="stylesheet">-->
+<!--        <link href="/static/css/bootstrap-icons.css" rel="stylesheet">-->
+
+<!--        <link rel="stylesheet" href="css/slick.css"/>-->
+
+<!--        <link href="/static/css/tooplate-little-fashion.css" rel="stylesheet">-->
+<!--  &lt;!&ndash; Design by foolishdeveloper.com &ndash;&gt;-->
+<!--    <title>Glassmorphism login Form Tutorial in html css</title>-->
+
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">-->
+<!--    &lt;!&ndash;Stylesheet&ndash;&gt;-->
+<!--    <style media="screen">-->
+<!--      *,-->
+<!--*:before,-->
+<!--*:after{-->
+<!--    padding: 0;-->
+<!--    margin: 0;-->
+<!--    box-sizing: border-box;-->
+<!--}-->
+<!--body{-->
+<!--    background-color: #ffefd5;-->
+<!--}-->
+<!--.background{-->
+<!--    width: 450px;-->
+<!--    height: 520px;-->
+<!--    position: absolute;-->
+<!--    transform: translate(-50%,-50%);-->
+<!--    left: 50%;-->
+<!--    top: 50%;-->
+<!--}-->
+<!--.background .shape{-->
+<!--    height: 150px;-->
+<!--    width: 150px;-->
+<!--    position: absolute;-->
+<!--    border-radius: 50%;-->
+<!--}-->
+<!--.shape:first-child{-->
+<!--    background: linear-gradient(-->
+<!--        #1845ad,-->
+<!--        #23a2f6-->
+<!--    );-->
+<!--    left: -80px;-->
+<!--    top: -80px;-->
+<!--}-->
+<!--.shape:last-child{-->
+<!--    background: linear-gradient(-->
+<!--        to right,-->
+<!--        #ff512f,-->
+<!--        #f09819-->
+<!--    );-->
+<!--    right: -30px;-->
+<!--    bottom: -80px;-->
+<!--}-->
+<!--form{-->
+<!--    height: 60px;-->
+<!--    width: 400px;-->
+<!--    background-color: rgba(255,255,255,0.13);-->
+<!--    position: absolute;-->
+<!--    transform: translate(-50%,-50%);-->
+<!--    top: 60%;-->
+<!--    left: 50%;-->
+<!--    border-radius: 10px;-->
+<!--    backdrop-filter: blur(10px);-->
+<!--    border: 2px solid rgba(255,255,255,0.1);-->
+<!--    box-shadow: 0 0 40px rgba(8,7,16,0.6);-->
+<!--    padding: 50px 35px;-->
+<!--}-->
+<!--form *{-->
+<!--    font-family: 'Poppins',sans-serif;-->
+<!--    color: #ffffff;-->
+<!--    letter-spacing: 0.5px;-->
+<!--    outline: none;-->
+<!--    border: none;-->
+<!--}-->
+<!--form h3{-->
+<!--    font-size: 32px;-->
+<!--    font-weight: 500;-->
+<!--    line-height: 42px;-->
+<!--    text-align: center;-->
+<!--}-->
+
+<!--label{-->
+<!--    display: block;-->
+<!--    margin-top: 30px;-->
+<!--    font-size: 16px;-->
+<!--    font-weight: 500;-->
+<!--}-->
+<!--input{-->
+<!--    display: block;-->
+<!--    height: 100px;-->
+<!--    width: 100%;-->
+<!--    background-color: rgba(255,255,255,0.07);-->
+<!--    border-radius: 3px;-->
+<!--    padding: 0 10px;-->
+<!--    margin-top: 8px;-->
+<!--    font-size: 14px;-->
+<!--    font-weight: 300;-->
+<!--}-->
+<!--::placeholder{-->
+<!--    color: #e5e5e5;-->
+<!--}-->
+<!--button{-->
+<!--    margin-top: 50px;-->
+<!--    width: 100%;-->
+<!--    background-color: #ffffff;-->
+<!--    color: #080710;-->
+<!--    padding: 15px 0;-->
+<!--    font-size: 18px;-->
+<!--    font-weight: 600;-->
+<!--    border-radius: 5px;-->
+<!--    cursor: pointer;-->
+<!--}-->
+<!--.social{-->
+<!--  margin-top: 30px;-->
+<!--  display: flex;-->
+<!--}-->
+<!--.social div{-->
+<!--  background: red;-->
+<!--  width: 150px;-->
+<!--  border-radius: 3px;-->
+<!--  padding: 5px 10px 10px 5px;-->
+<!--  background-color: rgba(255,255,255,0.27);-->
+<!--  color: #eaf0fb;-->
+<!--  text-align: center;-->
+<!--}-->
+<!--.social div:hover{-->
+<!--  background-color: rgba(255,255,255,0.47);-->
+<!--}-->
+<!--.social .fb{-->
+<!--  margin-left: 25px;-->
+<!--}-->
+<!--.social i{-->
+<!--  margin-right: 4px;-->
+<!--}-->
+
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<main>-->
+<!--            <nav class="navbar navbar-expand-lg">-->
+<!--                <div class="container">-->
+<!--                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                        <span class="navbar-toggler-icon"></span>-->
+<!--                    </button>-->
+
+<!--                    <a class="navbar-brand" href="index.html">-->
+<!--                        <strong><span>ELECTRO</span>STORE</strong>-->
+<!--                    </a>-->
+
+<!--                    <div class="d-lg-none">-->
+<!--                        <a href="/static/login.html" class="bi-person custom-icon me-3"></a>-->
+
+<!--                        <a href="/static/product-detail.html" class="bi-bag custom-icon"></a>-->
+<!--                    </div>-->
+
+<!--                    <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--                        <ul class="navbar-nav mx-auto">-->
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link active" href="index.html">Home</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link" href="sign_in">sign_in</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link" href="products">Sensors and Modules</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link" href="products">Electronics Components</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link" href="products">Power Supply</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link" href="products">Robotics</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link" href="products">Tools and Connector</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link" href="faq.html">FAQs</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a class="nav-link" href="contact">Contact</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--                        </ul>-->
+
+<!--                        <div class="d-none d-lg-block">-->
+<!--                            <a href="/static/login.html" class="bi-person custom-icon me-3"></a>-->
+
+<!--                            <a href="/static/products.html" class="bi-bag custom-icon"></a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </nav>-->
+<!--</main>-->
+<!--    <div class="background">-->
+<!--        <div class="shape"></div>-->
+<!--        <div class="shape"></div>-->
+<!--    </div>-->
+<!--{% for i in p %}-->
+<!--<ul>-->
+<!--    <li>Product_Name:{{i.Product_Name}}</li>-->
+<!--    <li>Price:{{i.Price}}</li>-->
+<!--    <li>Quantity:{{i.Quantity}}</li>-->
+<!--    <li><img src="{{i.Photo.url}}" alt="Photo" height="50px" width="50px"></li>-->
+<!--    <li><a href="/products_edit/{{i.id}}">edit</a></li>-->
+<!--    <li><a href="/products_delete/{{i.id}}">delete</a></li>-->
+<!--</ul>-->
+<!--{% endfor %}-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 {% load static %}
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Glassmorphism login Form Tutorial in html css</title>
-
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+            <script type="text/javascript">
+                window.history.forward();
+                function noBack() {
+                    window.history.forward();
+                }
+            </script>
+
+        <title>ELECTRO STORE</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -32,139 +279,7 @@
         <link rel="stylesheet" href="css/slick.css"/>
 
         <link href="/static/css/tooplate-little-fashion.css" rel="stylesheet">
-  <!-- Design by foolishdeveloper.com -->
-    <title>Glassmorphism login Form Tutorial in html css</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <!--Stylesheet-->
-    <style media="screen">
-      *,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #ffefd5;
-}
-.background{
-    width: 450px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-}
-.background .shape{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -80px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
-}
-form{
-    height: 60px;
-    width: 400px;
-    background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 60%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
-}
-form *{
-    font-family: 'Poppins',sans-serif;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    outline: none;
-    border: none;
-}
-form h3{
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 42px;
-    text-align: center;
-}
-
-label{
-    display: block;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
-}
-input{
-    display: block;
-    height: 100px;
-    width: 100%;
-    background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;
-}
-::placeholder{
-    color: #e5e5e5;
-}
-button{
-    margin-top: 50px;
-    width: 100%;
-    background-color: #ffffff;
-    color: #080710;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.social{
-  margin-top: 30px;
-  display: flex;
-}
-.social div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
-  margin-right: 4px;
-}
-
-    </style>
-</head>
+    </head>
 <body>
 <main>
             <nav class="navbar navbar-expand-lg">
@@ -173,61 +288,16 @@ button{
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <a class="navbar-brand" href="index.html">
-                        <strong><span>ELECTRO</span>STORE</strong>
+                    <a class="navbar-brand" href="index">
+                        <strong><span>ELECTRO</span> STORE</strong>
                     </a>
 
-                    <div class="d-lg-none">
-                        <a href="/static/login.html" class="bi-person custom-icon me-3"></a>
+<!--                    <div class="d-none d-lg-block">-->
+<!--                                <a href="/wishlist" class="bi-heart custom-icon me-3"></a>-->
+<!--&lt;!&ndash;                            <a href="/static/wishlist" class="bi-person custom-icon me-3"></a>&ndash;&gt;-->
 
-                        <a href="/static/product-detail.html" class="bi-bag custom-icon"></a>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link active" href="index.html">Home</a>-->
-<!--                            </li>-->
-
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="sign_in">sign_in</a>-->
-<!--                            </li>-->
-
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="products">Sensors and Modules</a>-->
-<!--                            </li>-->
-
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="products">Electronics Components</a>-->
-<!--                            </li>-->
-
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="products">Power Supply</a>-->
-<!--                            </li>-->
-
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="products">Robotics</a>-->
-<!--                            </li>-->
-
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="products">Tools and Connector</a>-->
-<!--                            </li>-->
-
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="faq.html">FAQs</a>-->
-<!--                            </li>-->
-
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="contact">Contact</a>-->
-<!--                            </li>-->
-                        </ul>
-
-                        <div class="d-none d-lg-block">
-                            <a href="/static/login.html" class="bi-person custom-icon me-3"></a>
-
-                            <a href="/static/products.html" class="bi-bag custom-icon"></a>
-                        </div>
-                    </div>
+<!--&lt;!&ndash;                            <a href="/static/products.html" class="bi-bag custom-icon"></a>&ndash;&gt;-->
+<!--                        </div>-->
                 </div>
             </nav>
 </main>
@@ -235,15 +305,124 @@ button{
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-{% for i in p %}
-<ul>
-    <li>Product_Name:{{i.Product_Name}}</li>
-    <li>Price:{{i.Price}}</li>
-    <li>Quantity:{{i.Quantity}}</li>
-    <li><img src="{{i.Photo.url}}" alt="Photo" height="50px" width="50px"></li>
-    <li><a href="/products_edit/{{i.id}}">edit</a></li>
-    <li><a href="/products_delete/{{i.id}}">delete</a></li>
-</ul>
-{% endfor %}
-</body>
+
+<!--<ul>-->
+<!--    <li>Product_Name:{{i.Product_Name}}</li>-->
+<!--    <li>Price:{{i.Price}}</li>-->
+<!--    <li>Quantity:{{i.Quantity}}</li>-->
+<!--    <li>-->
+<!--    <li><a href="order/{{i.id}}/{{i.Price}}">order</a></li>-->
+<!--    <li><a href="wishlist/{{i.id}}">wishlist</a></li>-->
+<!--&lt;!&ndash;    <li><a href="order_con/{{i.id}}">order confirmed</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;    <li><a href="/products_delete/{{i.id}}"></a></li>&ndash;&gt;-->
+<!--</ul>-->
+<div class="col-12 text-center">
+                            <h2 class="mb-5">Featured Products</h2>
+                        </div>
+<table class="table">
+    <tr>
+        {% for i in p %}
+        <td>
+            <section class="featured-product section-padding">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+
+                                    <img src="{{i.Photo.url}}" alt="Photo"  class="product-title-link">
+
+
+
+
+                                <div class="product-info d-flex">
+
+                                    <div>
+<!--                                        <div style="margin-left:70px;">-->
+<!--                                            <a href="/wishlist/{{i.id}}" class="bi-heart custom-icon me-3"></a>-->
+<!--                                        </div>-->
+                                        <h6>
+                                            <a href="" class="product-title-link">{{i.Product_Name}}</a>
+                                        </h6>
+
+
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto mt-auto mb-5">${{i.Price}}</small>
+                                </div>
+                                <div>
+                                    <a href="/products_edit/{{i.id}}">edit</a>
+
+                                </div>
+                                <div>
+                                    <a href="/products_delete/{{i.id}}">delete</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        {% endfor %}
+        </td>
+    </tr>
+</table>
+
+
+<footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-10 me-auto mb-4">
+                        <h4 class="text-white mb-3"><a href="index.html">Electro</a> Store</h4>
+                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Electro Store</strong></p>
+                        <br>
+                        <p class="copyright-text">Designed by <a href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+                    </div>
+
+                    <div class="col-lg-5 col-8">
+                        <h5 class="text-white mb-3">Sitemap</h5>
+
+                        <ul class="footer-menu d-flex flex-wrap">
+                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">Booking</a></li>
+
+<!--                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>-->
+
+<!--                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>-->
+
+<!--                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>-->
+
+<!--                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>-->
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-4">
+                        <h5 class="text-white mb-3">Social</h5>
+
+                        <ul class="social-icon">
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+</footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/bootstrap.bundle.min.js"></script>
+        <script src="/static/js/Headroom.js"></script>
+        <script src="/static/js/jQuery.headroom.js"></script>
+        <script src="/static/js/slick.min.js"></script>
+        <script src="/static/js/custom.js"></script>
+   </body>
 </html>
