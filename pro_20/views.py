@@ -105,7 +105,7 @@ def home1(request):
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request,'index.html')
 
 
 def user_view(request):
